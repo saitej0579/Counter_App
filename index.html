@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#344161]">
+      <!-- heading -->
+      <div class="font-medium text-[20px]">
+        <p class="">
+            increment and decrement 
+        </p>
+      </div>
+      <!-- bar -->
+      <div class="p-[10px] flex gap-[70px] bg-white mt-[10px] rounded-sm">
+        <!-- negative buton -->
+          <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <div class="text-[20px] font-bold" id="para">
+            1
+          </div>
+          <!-- positive button -->
+          <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">
+            <i class="fo-solid fa-plus"></i>
+          </button>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
